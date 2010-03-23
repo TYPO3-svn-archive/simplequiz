@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>module</type>
+		<description>Language labels for the Simple Quiz extension in the FRONTEND</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="tx_simplequiz_domain_model_question">The main question object</label>
+			<label index="tx_simplequiz_domain_model_question.question">The question</label>
+			<label index="tx_simplequiz_domain_model_question.explanation">An explanation for the question (additional infos)</label>
+			<label index="tx_simplequiz_domain_model_question.answers">answers</label>
+			<label index="tx_simplequiz_domain_model_answer">Represents an answer</label>
+			<label index="tx_simplequiz_domain_model_answer.answer">The answer possibility</label>
+			<label index="tx_simplequiz_domain_model_answer.correct">Is this a correct answer?</label>
+			<label index="tx_simplequiz_domain_model_answer.explanation">The explanation of the answer</label>
+			<label index="tx_simplequiz_template_evaluate.back">Back</label>
+			<label index="tx_simplequiz_template_evaluate.results">Result</label>
+			<label index="tx_simplequiz_template_evaluate.correct">Correct:</label>
+			<label index="tx_simplequiz_template_evaluate.question">Question</label>
+			<label index="tx_simplequiz_template_evaluate.questions">Questions</label>
+			<label index="tx_simplequiz_template_evaluate.outof">out of</label>
+			<label index="tx_simplequiz_template_list.correctAnswerCount">Correct Answers:</label>
+			<label index="tx_simplequiz_template_list.evaluate">Evaluate!</label>
+			<label index="tx_simplequiz_template_list.explanation">Click here to open the explanation</label>
+			<label index="tx_simplequiz_flexform.maxQuestions">Max. number of questions to display at once</label>
+			<label index="tx_simplequiz_flexform.templateRootPath">Template Root Path</label>
+			<label index="tx_simplequiz_flexform.addResFiles">Add default CSS and JS (jQuery library required!)?</label>
+		</languageKey>
+		<languageKey index="de" type="array">
+			<label index="tx_simplequiz_domain_model_question">Das Hauptfrageobjekt</label>
+			<label index="tx_simplequiz_domain_model_question.question">Die Frage</label>
+			<label index="tx_simplequiz_domain_model_question.explanation">Zusatzinformationen / Erklärung</label>
+			<label index="tx_simplequiz_domain_model_question.answers">Antworten</label>
+			<label index="tx_simplequiz_domain_model_answer">Die Gesamtantwort</label>
+			<label index="tx_simplequiz_domain_model_answer.answer">Die Antwortmöglichkeit</label>
+			<label index="tx_simplequiz_domain_model_answer.correct">Ist diese Antwort korrekt?</label>
+			<label index="tx_simplequiz_domain_model_answer.explanation">Eine Erklärung der Antwort</label>
+			<label index="tx_simplequiz_template_evaluate.back">Zurück</label>
+			<label index="tx_simplequiz_template_evaluate.results">Ergebnis</label>
+			<label index="tx_simplequiz_template_evaluate.correct">Korrekt:</label>
+			<label index="tx_simplequiz_template_evaluate.question">Frage</label>
+			<label index="tx_simplequiz_template_evaluate.questions">Fragen</label>
+			<label index="tx_simplequiz_template_evaluate.outof">von</label>
+			<label index="tx_simplequiz_template_list.correctAnswerCount">Anzahl korrekter Antworten:</label>
+			<label index="tx_simplequiz_template_list.evaluate">Auswerten:</label>
+			<label index="tx_simplequiz_template_list.explanation">Klicke hier, um die Zusatzinformationen anzuzeigen!</label>
+			<label index="tx_simplequiz_flexform.maxQuestions">Max. Anzahl angezeigter Fragen</label>
+			<label index="tx_simplequiz_flexform.templateRootPath">Template-Root-Pfad</label>
+			<label index="tx_simplequiz_flexform.addResFiles">Standard-JS und -CSS hinzufügen (jQuery benötigt!)?</label>
+		</languageKey>
+	</data>
+</T3locallang>
