@@ -1,0 +1,36 @@
+<T3DataStructure>
+  <sheets>
+    <sDEF>
+      <ROOT>
+        <TCEforms>
+          <sheetTitle>Options</sheetTitle>
+        </TCEforms>
+        <type>array</type>
+        <el>
+          <settings.maxQuestions>
+            <TCEforms>
+              <label>LLL:EXT:simplequiz/Resources/Private/Language/locallang.xml:tx_simplequiz_flexform.maxQuestions</label>
+              <config>
+                <type>input</type>
+                <size>2</size>
+				<eval>int</eval>
+				<default>10</default>
+              </config>
+            </TCEforms>
+          </settings.maxQuestions>
+          <settings.view.templateRootPath>
+			<TCEforms>
+				<label>LLL:EXT:simplequiz/Resources/Private/Language/locallang.xml:tx_simplequiz_flexform.templateRootPath</label>
+				<config>
+					<type>input</type>
+					<eval>trim</eval>
+					<default></default>
+					<size>30</size>
+				</config>
+			</TCEforms>
+		  </settings.view.templateRootPath>
+        </el>
+      </ROOT>
+    </sDEF>
+  </sheets>
+</T3DataStructure>
