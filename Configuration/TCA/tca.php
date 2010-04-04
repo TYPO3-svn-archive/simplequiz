@@ -108,13 +108,13 @@ $TCA['tx_simplequiz_domain_model_question'] = array(
 $TCA['tx_simplequiz_domain_model_answer'] = array(
 	'ctrl' => $TCA['tx_simplequiz_domain_model_answer']['ctrl'],
 	'interface' => array(
-		'showRecordFieldList' => 'answer,correct,explanation'
+		'showRecordFieldList' => 'answer,correct'
 	),
 	'types' => array(
 		'1' => array('showitem' => 'answer,correct')
 	),
 	'palettes' => array(
-		'1' => array('showitem' => 'explanation;;;richtext')
+		'1' => array()
 	),
 	'columns' => array(
 		'sys_language_uid' => array(
@@ -177,26 +177,6 @@ $TCA['tx_simplequiz_domain_model_answer'] = array(
 			'config'  => array(
 				'type' => 'check',
 				'default' => 0
-			)
-		),
-		'explanation' => array(
-			'exclude' => 0,
-			'label'   => 'LLL:EXT:simplequiz/Resources/Private/Language/locallang_db.xml:tx_simplequiz_domain_model_answer.explanation',
-			'config'  => array(
-	            'type' => 'text',
-	            'cols' => '30',
-	            'rows' => '5',
-	            'wizards' => array(
-	                '_PADDING' => 2,
-	                'RTE' => array(
-	                    'notNewRecords' => 1,
-	                    'RTEonly'       => 1,
-	                    'type'          => 'script',
-						'title'			=> 'LLL:EXT:cms/locallang_ttc.php:bodytext.W.RTE',
-	                    'icon'          => 'wizard_rte2.gif',
-						'script'        => 'wizard_rte.php',
-	                )
-	            )
 			)
 		),
 		'question' => array(
