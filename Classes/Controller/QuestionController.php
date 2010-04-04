@@ -48,12 +48,6 @@ class Tx_Simplequiz_Controller_QuestionController extends Tx_Extbase_MVC_Control
 	public function initializeAction() {		
 		$this->questionRepository = t3lib_div::makeInstance('Tx_Simplequiz_Domain_Repository_QuestionRepository');	
 		$this->answerRepository = t3lib_div::makeInstance('Tx_Simplequiz_Domain_Repository_AnswerRepository');	
-		
-		// CSS and JS is only added if enabled in flexform
-		if($this->settings['addResFiles']) {
-		    $GLOBALS['TSFE']->getPageRenderer()->addCssFile(t3lib_extMgm::extRelPath('simplequiz') . 'Resources/Public/CSS/simplequiz_basic.css');
-		    $GLOBALS['TSFE']->getPageRenderer()->addJsFile(t3lib_extMgm::extRelPath('simplequiz') . 'Resources/Public/JS/simplequiz_basic.js');
-		}
 	}
 	
 	/**
@@ -78,7 +72,7 @@ class Tx_Simplequiz_Controller_QuestionController extends Tx_Extbase_MVC_Control
 				} 
 			}	
 				
-		}	
+		}
 		$this->view->assign('questions', $questions);		
 	}
 	

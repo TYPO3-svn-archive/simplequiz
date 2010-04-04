@@ -29,15 +29,6 @@
 				</config>
 			</TCEforms>
 		  </settings.view.templateRootPath>
-          <settings.view.addResFiles>
-			<TCEforms>
-				<label>LLL:EXT:simplequiz/Resources/Private/Language/locallang.xml:tx_simplequiz_flexform.addResFiles</label>
-				<config>
-					<type>check</type>
-					<default>1</default>
-				</config>
-			</TCEforms>
-		  </settings.view.addResFiles>
         </el>
       </ROOT>
     </sDEF>

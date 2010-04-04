@@ -4,10 +4,7 @@
 			<div class="question"> 
 				<div class="explanation"><f:format.html>{question.explanation}</f:format.html></div>
 				<h2>{question.question}</h2>
-				<div class="openExplanation">
-					<f:translate key="tx_simplequiz_template_list.explanation">Click here to open the explanation.</f:translate>
-				</div>
-				<f:translate key="tx_simplequiz_template_list.correctAnswerCount">Correct Answers:</f:translate> {question.correctAnswerCount}
+				<f:translate key="tx_simplequiz_template_list.correctAnswerCount">Correct Answers:</f:translate> 			{question.correctAnswerCount}
 			<f:for each="{question.answers}" as="answer">
 				<div class="answeroption"> 
 					<f:if condition="{question.correctAnswerCount} == 1">
