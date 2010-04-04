@@ -1,0 +1,25 @@
+<div class="tx_simplequiz_questions">
+	<f:form action="evaluate" name="answers">
+		<f:for each="{questions}" as="question">
+			<div class="question"> 
+				<div class="explanation"><f:format.html>{question.explanation}</f:format.html></div>
+				<h2>{question.question}</h2>
+				<f:translate key="tx_simplequiz_template_list.correctAnswerCount">Correct Answers:</f:translate> 			{question.correctAnswerCount}
+			<f:for each="{question.answers}" as="answer">
+				<div class="answeroption"> 
+					<f:if condition="{question.correctAnswerCount} == 1">
+						<f:then> 
+							<f:form.radio name="question[{question.uid}]" id="question{answer.uid}" value="{answer.uid}" />
+						</f:then>
+						<f:else>
+							<f:form.checkbox name="question[{question.uid}][]" id="question{answer.uid}" value="{answer.uid}" />
+						</f:else>
+					</f:if>
+					<label for="question{answer.uid}">{answer.answer}</label>
+				</div>
+			</f:for>
+			</div>
+		</f:for>
+		<f:form.submit value="{f:translate(key:'tx_simplequiz_template_list.evaluate')}" />
+	</f:form>
+</div>

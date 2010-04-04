@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>database</type>
+		<description>Language labels for database tables/fields belonging to extension 'simplequiz'</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="tx_simplequiz_domain_model_question">Question</label>
+			<label index="tx_simplequiz_domain_model_question.question">Question</label>
+			<label index="tx_simplequiz_domain_model_question.explanation">Explanation</label>
+			<label index="tx_simplequiz_domain_model_question.answers">Answers</label>
+			<label index="tx_simplequiz_domain_model_answer">Answer</label>
+			<label index="tx_simplequiz_domain_model_answer.answer">Answer</label>
+			<label index="tx_simplequiz_domain_model_answer.correct">Correct Answer</label>
+			<label index="tx_simplequiz_domain_model_answer.explanation">Explanation</label>
+		</languageKey>
+	</data>
+</T3locallang>

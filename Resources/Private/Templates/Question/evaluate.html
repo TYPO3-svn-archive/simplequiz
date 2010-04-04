@@ -1,0 +1,35 @@
+<div class="tx_simplequiz_evaluation">	
+	<h2><f:translate key="tx_simplequiz_template_evaluate.results">Results</f:translate></h2>
+	<f:translate key="tx_simplequiz_template_evaluate.correct">Correct:</f:translate> 
+		{correctAnswerCount} 
+	<f:if condition="{correctAnswerCount}==1">
+		<f:then>
+			<f:translate key="tx_simplequiz_template_evaluate.question">question</f:translate>
+		</f:then>
+		<f:else>
+			<f:translate key="tx_simplequiz_template_evaluate.questions">questions</f:translate>
+		</f:else>
+	</f:if> 
+	<f:translate key="tx_simplequiz_template_evaluate.outof">out of</f:translate> 
+	{questionCount} ({correctPercentage}%)
+	
+	<f:for each="{questions}" as="question"> 
+		<div class="{question.state}">
+		<h2>{question.question}</h2>
+			<ul>
+				<f:for each="{question.answers}" as="answer">	
+					<f:if condition="{answer.correct}">
+						<f:then><li class="ok {answer.state}"></f:then>
+						<f:else><li class="nono {answer.state}"></f:else>
+					</f:if>
+						{answer.answer}
+						<span class="explanation">
+							<f:format.html>{answer.explanation}</f:format.html>
+						</span>
+					</li>
+				</f:for>
+			</ul>
+		</div>
+	</f:for>
+	<f:link.action action="list"><f:translate key="tx_simplequiz_template_evaluate.back">Back</f:translate></f:link.action>
+</div>
